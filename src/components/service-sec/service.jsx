@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Fade } from 'react-reveal';
@@ -19,11 +19,40 @@ const ServiceBox = styled(Box)(({ theme }) => ({
 }));
 
 function Service() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+  const serviceRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Change this threshold value based on your requirement
+    };
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !animationPlayed) {
+        setIsVisible(true);
+        setAnimationPlayed(true);
+      }
+    }, options);
+
+    if (serviceRef.current) {
+      observer.observe(serviceRef.current);
+    }
+
+    return () => {
+      if (serviceRef.current) {
+        observer.unobserve(serviceRef.current);
+      }
+    };
+  }, [animationPlayed]);
+
   return (
-    <Box id="service" py={8} bgcolor="#f7f7f7">
+    <Box id="service" py={8} bgcolor="#f7f7f7" ref={serviceRef}>
       <Grid container spacing={4} justifyContent="center">
         <Grid item xs={12} sm={6} md={4}>
-          <Fade bottom>
+          <Fade bottom when={isVisible}>
             <ServiceBox>
               <LocalShippingIcon color="primary" fontSize="large" />
               <Typography variant="h6" mt={2}>Furniture Delivery</Typography>
@@ -32,7 +61,7 @@ function Service() {
           </Fade>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Fade bottom delay={200}>
+          <Fade bottom delay={300} when={isVisible}>
             <ServiceBox>
               <CheckCircleIcon color="primary" fontSize="large" />
               <Typography variant="h6" mt={2}>Quality products</Typography>
@@ -41,7 +70,7 @@ function Service() {
           </Fade>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Fade bottom delay={400}>
+          <Fade bottom delay={500} when={isVisible}>
             <ServiceBox>
               <SupportAgentIcon color="primary" fontSize="large" />
               <Typography variant="h6" mt={2}>24/7 Support</Typography>

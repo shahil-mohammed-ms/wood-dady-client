@@ -19,12 +19,12 @@ const slides = [
   {
     heading: 'Elegant Designs',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget gravida ex, in iaculis enim. Cras et sodales lorem.',
-    imageUrl: '/gallery/b2.jpg', 
+    imageUrl: '/gallery/b1.jpg', 
   },
   {
     heading: 'Customizable Options',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget gravida ex, in iaculis enim. Cras et sodales lorem.',
-    imageUrl: '/gallery/b3.jpg', 
+    imageUrl: '/gallery/b1.jpg', 
   },
 ];
 
