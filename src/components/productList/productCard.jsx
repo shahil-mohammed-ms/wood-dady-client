@@ -49,7 +49,7 @@ function ProductCard() {
         <Typography variant="body2" color="text.secondary">
           Description of the furniture goes here. You can provide additional details about the product.
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 2 }}>
+        <Box sx={{ display: 'flex', gap:'20px', alignItems: 'center', mt: 2 }}>
           <Typography variant="h6" component="div">
             $100 {/* Actual price */}
           </Typography>
@@ -58,7 +58,7 @@ function ProductCard() {
           </Typography>
         </Box>
       </CardContent>
-      <CardActions sx={{ justifyContent: 'space-between' }}>
+      <CardActions sx={{  }}>
         <Button size="small" variant="contained" color="primary">
           Add to Cart
         </Button>
