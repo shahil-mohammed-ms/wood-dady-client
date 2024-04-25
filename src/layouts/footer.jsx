@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer-distributed">
       <div className="footer-left">
-        <h3>Wood<span>Dady</span></h3>
+        <h3>Wood<span>Daddy</span></h3>
         <p className="footer-links">
           <a href="#" className="link-1">Home</a>
           <a href="#">Blog</a>

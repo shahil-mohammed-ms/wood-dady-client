@@ -39,7 +39,7 @@ const Header = () => {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
 <div className="logo-bar">
-<h1>Wood Dady</h1>
+<h1>Wood Daddy</h1>
 </div>
 
 <Divider />

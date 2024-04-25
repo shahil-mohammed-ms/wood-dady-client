@@ -25,9 +25,7 @@ function ProductList() {
         <ProductCard />
         <ProductCard />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+       
 
 <div className="pagination">
 <Stack spacing={2}>
