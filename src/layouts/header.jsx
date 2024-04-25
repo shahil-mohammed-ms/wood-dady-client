@@ -94,7 +94,7 @@ const Header = () => {
 
 </div>
 <div className="logo-bar">
-<h1>Wood Dady</h1>
+<h1>Wood Daddy</h1>
 </div>
 <div className="grp-bar">
 <NotificationsIcon/>

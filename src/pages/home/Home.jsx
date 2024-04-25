@@ -6,6 +6,7 @@ import ProductList from '../../components/productList/productList'
 import Footer from '../../layouts/footer'
 import OfferSale from '../../components/offerSale/offerSale'
 import ContentSection from '../../components/contentSection/contentSection'
+import ContactSec from '../../components/contactSec/contactSec'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <ContentSection/>
       <OfferSale/>
       <ProductList/>
+      <ContactSec/>
 
 
       <Service/>
