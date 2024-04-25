@@ -5,12 +5,14 @@ import Service from '../../components/service-sec/service'
 import ProductList from '../../components/productList/productList'
 import Footer from '../../layouts/footer'
 import OfferSale from '../../components/offerSale/offerSale'
+import ContentSection from '../../components/contentSection/contentSection'
 
 function Home() {
   return (
     <div>
       <Header/>
       <Banner/>
+      <ContentSection/>
       <OfferSale/>
       <ProductList/>
 
