@@ -3,6 +3,7 @@ import Header from '../../layouts/header'
 import Banner from '../../components/banner/banner'
 import Service from '../../components/service-sec/service'
 import ProductList from '../../components/productList/productList'
+import Footer from '../../layouts/footer'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Banner/>
       <Service/>
       <ProductList/>
+      <Footer/>
 
 
       </div>
