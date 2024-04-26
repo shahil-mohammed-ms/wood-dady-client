@@ -7,6 +7,7 @@ import Footer from '../../layouts/footer'
 import OfferSale from '../../components/offerSale/offerSale'
 import ContentSection from '../../components/contentSection/contentSection'
 import ContactSec from '../../components/contactSec/contactSec'
+import HomeCategory from '../../components/homecategory/homeCategory'
 
 function Home() {
   return (
@@ -14,10 +15,10 @@ function Home() {
       <Header/>
       <Banner/>
       <ContentSection/>
+      <HomeCategory/>
       <OfferSale/>
       <ProductList/>
       <ContactSec/>
-
 
       <Service/>
       <Footer/>

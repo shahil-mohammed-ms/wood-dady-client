@@ -5,9 +5,8 @@ import Home from '../pages/home/Home';
 function routes() {
   return (
    
-    
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
    
   )
