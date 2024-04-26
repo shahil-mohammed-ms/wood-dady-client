@@ -5,11 +5,11 @@ function HomeCategory() {
 
 const categories = [
   {
-    imgUrl:'/gallery/c1.jpg',
+    imgUrl:'/gallery/c2.jpg',
     category:'SOFA'
   },
   {
-    imgUrl:'/gallery/c1.jpg',
+    imgUrl:'/gallery/c3.jpg',
     category:'TABLE'
   },
   {
