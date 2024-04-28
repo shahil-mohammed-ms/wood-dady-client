@@ -34,6 +34,18 @@ gap: 15px;
 
 }
 
+.headicons{
+  color: #888;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+
+}
+.headicons:hover{
+
+  opacity: 1;
+}
+
 .mob-search-bar{
   display: none;
 }

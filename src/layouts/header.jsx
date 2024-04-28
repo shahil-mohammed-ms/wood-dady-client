@@ -9,7 +9,6 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
@@ -96,12 +95,13 @@ const Header = () => {
 <div className="logo-bar">
 <h1>Wood Daddy</h1>
 </div>
-<div className="grp-bar">
-<NotificationsIcon/>
-<FavoriteBorderIcon/>
-<ShoppingBasketIcon/>
 
+<div className="grp-bar">
+<NotificationsIcon className='headicons'  />
+<FavoriteBorderIcon className='headicons'  />
+<ShoppingBasketIcon className='headicons'  />
 </div>
+
       </div>
       <hr />
 {/* header bottom section */}
@@ -146,9 +146,9 @@ const Header = () => {
 
 </div>
 <div className="mob-grp-bar">
-<NotificationsIcon/>
-<FavoriteBorderIcon/>
-<ShoppingBasketIcon/>
+<NotificationsIcon className='headicons' />
+<FavoriteBorderIcon className='headicons' />
+<ShoppingBasketIcon className='headicons' />
 
 <div>
       <IconButton
