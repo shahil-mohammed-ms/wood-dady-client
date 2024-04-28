@@ -8,7 +8,8 @@
 }
 @media only screen and (max-width: 678px) {
   .ContactSec{
-
+justify-content: center;
+align-items: center;
   }
  
   .contactBox{
@@ -19,6 +20,10 @@
   .contactImg{
 
   
+  }
+  .ctitle {
+font-size: 30px !important;
+
   }
 }
 

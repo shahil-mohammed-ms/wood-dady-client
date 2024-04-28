@@ -19,7 +19,6 @@ function Home() {
       <OfferSale/>
       <ProductList/>
       <ContactSec/>
-
       <Service/>
       <Footer/>
 
