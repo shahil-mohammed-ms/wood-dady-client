@@ -22,7 +22,7 @@ width: 32% !important;
   align-items: center;
   border-radius: 10%;
   overflow: hidden;
-  transition: background-size 0.5s ease;
+  transition: background-size 2s ease;
 }
 
 .catBox:hover {

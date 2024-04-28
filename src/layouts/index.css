@@ -155,7 +155,7 @@ font-size: 18px;
 /* Footer CSS */
 
 .footer-distributed {
-  background: #666;
+  background: #aba7a7;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -178,13 +178,13 @@ font-size: 18px;
 
 /* The company logo */
 .footer-distributed h3 {
-  color: #ffffff;
+  color: #0a0909;
   font: normal 36px 'Open Sans', cursive;
   margin: 0;
 }
 
 .footer-distributed h3 span {
-  color: lightseagreen;
+  color: rgb(47, 32, 178);
 }
 
 /* Footer links */
@@ -327,4 +327,6 @@ font-size: 18px;
     padding: 30px 20px;
   }
 }
+
+
 

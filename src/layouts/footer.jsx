@@ -1,21 +1,37 @@
 
 import React from 'react';
 import './index.css'; // Import the CSS file
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
+
+  const iconStyle = {
+    fontSize: '2rem',
+    margin: '0 5px',
+    color: '#333',
+  };
+
+  const footerIconsStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
   return (
     <footer className="footer-distributed">
       <div className="footer-left">
         <h3>Wood<span>Daddy</span></h3>
         <p className="footer-links">
           <a href="#" className="link-1">Home</a>
-          <a href="#">Blog</a>
-          <a href="#">Pricing</a>
-          <a href="#">About</a>
-          <a href="#">Faq</a>
-          <a href="#">Contact</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+         
+          <a href="#">Contact Us</a>
         </p>
-        <p className="footer-company-name">Company Name © 2015</p>
+        <p className="footer-company-name">Copyrights © 2024.All rights reserved</p>
       </div>
 
       <div className="footer-center">
@@ -29,21 +45,22 @@ const Footer = () => {
         </div>
         <div>
           <i className="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@company.com</a></p>
+          <p ><a href="" style={{color:'white'}}>support@company.com</a></p>
         </div>
       </div>
 
       <div className="footer-right">
         <p className="footer-company-about">
           <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        <span style={{color:'white'}}>        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+</span>  
         </p>
-        <div className="footer-icons">
-          <a href="#"><i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-twitter"></i></a>
-          <a href="#"><i className="fa fa-linkedin"></i></a>
-          <a href="#"><i className="fa fa-github"></i></a>
-        </div>
+        <div style={footerIconsStyle}>
+      <a href="#"><FacebookIcon style={iconStyle} /></a>
+      <a href="#"><TwitterIcon style={iconStyle} /></a>
+      <a href="#"><LinkedInIcon style={iconStyle} /></a>
+      <a href="#"><GitHubIcon style={iconStyle} /></a>
+    </div>
       </div>
     </footer>
   );

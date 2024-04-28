@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css'
 import { Box, Button, Card, CardActions, CardContent, IconButton, Typography } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
@@ -7,9 +8,9 @@ function ProductCard() {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const images = [
-    'https://via.placeholder.com/150',
-    'https://via.placeholder.com/200',
-    'https://via.placeholder.com/250',
+    '/gallery/products/p1.jpg',
+    '/gallery/products/p1.jpg',
+    '/gallery/products/p1.jpg',
     // Add more image URLs as needed
   ];
 

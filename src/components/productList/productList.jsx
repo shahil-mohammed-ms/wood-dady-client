@@ -16,7 +16,7 @@ function ProductList() {
   return (
     <div className='ProductsBox'>
       <div className="Title">
-        <h1>Featured Products</h1>
+        <h1 style={{color:'#6e6e6e'}}>Featured Products</h1>
       </div>
       <div className="ProductList"> {/* Updated class name */}
         <ProductCard />
