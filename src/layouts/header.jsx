@@ -74,7 +74,7 @@ const Header = () => {
 
 <form   style={{ display: 'flex' }}>
 
-        <SearchIcon />
+        <SearchIcon className='headicons' />
 
       <input
         type="text"
@@ -93,7 +93,7 @@ const Header = () => {
 
 </div>
 <div className="logo-bar">
-<h1>Wood Daddy</h1>
+<h1 >Wood Daddy</h1>
 </div>
 
 <div className="grp-bar">
