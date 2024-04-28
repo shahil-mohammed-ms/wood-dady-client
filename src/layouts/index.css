@@ -100,7 +100,17 @@ justify-content: center;
   gap: 15px;
 
 }
+.logo-bar h1 {
+  font-size: 30px;
+  color: #888;
+transition: 0.3s;
 
+}
+.logo-bar h1:hover {
+  font-size: 35px;
+  color: #6e6e6e;
+
+}
 
 
 }

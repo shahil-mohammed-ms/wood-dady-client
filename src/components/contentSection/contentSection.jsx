@@ -4,10 +4,9 @@ import './index.css'
 function ContentSection() {
   return (
     <div className='contentSection'>
-      <h1 className="title">Our Crazy Furnitures</h1>
-      <p className="contentPara">
-      Enter a realm of luxury with our divine sofas and sectionals, where comfort and style intertwine like threads of a masterpiece. From sleek loveseats to sprawling sectionals, each piece exudes timeless elegance, transforming your living space into a canvas of refined sophistication.
-      </p>
+      <h1 className="title" style={{color:'#6e6e6e'}}>Our Custamisable Furnitures</h1>
+      <p className="contentPara" style={{color:'#888',fontFamily:'cursive'}}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut leo a justo faucibus vestibulum. Morbi tristique velit eget nulla viverra, nec condimentum libero venenatis. Aliquam erat volutpat. Sed sit amet sapien in libero tempus vulputate.      </p>
       </div>
   )
 }
