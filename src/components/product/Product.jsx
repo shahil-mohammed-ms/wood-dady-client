@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import ActiveLastBreadcrumb from '../../common/breadCrums/breadCrums';
+import AccordionBox from '../accordion/Accordion';
 
 function Product() {
   const [quantity, setQuantity] = useState(1);
@@ -21,18 +22,17 @@ function Product() {
       <ActiveLastBreadcrumb/>
 
       </div>
+
       <div className="proSub">
         <div className="imgFrame">
           <img src='/gallery/products/p1.jpg' alt='Product' />
         </div>
-
         <div className="proContents">
-          
         <h2 className='ftitle' >Furniture name</h2>  
      <p > <span className='fpr' >Rs:7000</span>
       <span className='fdpr' >3500</span> 
      <span  className='dcnt'> 50% off</span>  </p>
-
+    
      <div style={{display:'flex',alignItems:'center',gap:'20px'}}>
      <p className='qtyn' style={{fontSize:'22px'}} >Quantity: </p>
      <div className="quantity-counter">
@@ -41,12 +41,17 @@ function Product() {
       <button className="quantity-button" onClick={incrementQuantity}>+</button>
     </div>
      </div>
+     <p className='warning'>Hurry up! only 3 left</p>
 
      <div className="button-container">
       <button className="add-to-cart-button">Add to Cart</button>
       <button className="add-to-wishlist-button">Add to Wishlist</button>
     </div>
     
+{/* accordion */}
+<AccordionBox/>
+
+
 
         </div>
       </div>

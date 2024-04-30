@@ -57,6 +57,18 @@ font-size: 30px;
   .dcnt{
     font-size: 18px;
   }
+
+.proSub{
+  flex-direction: column;
+  align-items: center;
+}
+.proContents{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 }
 
 .quantity-counter {
@@ -130,6 +142,10 @@ font-size: 30px;
 .add-to-cart-button:hover, .add-to-wishlist-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.warning{
+  color: red;
 }
 
 @media screen and (max-width: 678px) {
