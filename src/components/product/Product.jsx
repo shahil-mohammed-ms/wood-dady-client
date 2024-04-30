@@ -41,6 +41,11 @@ function Product() {
       <button className="quantity-button" onClick={incrementQuantity}>+</button>
     </div>
      </div>
+
+     <div className="button-container">
+      <button className="add-to-cart-button">Add to Cart</button>
+      <button className="add-to-wishlist-button">Add to Wishlist</button>
+    </div>
     
 
         </div>
