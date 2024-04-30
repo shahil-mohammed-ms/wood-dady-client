@@ -10,6 +10,10 @@ function ProductPage() {
 
 <Product/>
 
+<div style={{marginTop:'50px'}}>
+<Footer/>
+</div>
+
  </div>
  
   )
