@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.css'
-import { Box, Button, Card, CardActions, CardContent, IconButton, Typography } from '@mui/material';
+import './index.css';
+import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
 
@@ -27,46 +27,45 @@ function ProductCard() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, margin: '0 auto', position: 'relative' }}>
-      <Box sx={{ position: 'relative', overflow: 'hidden', borderRadius: '16px' }}>
+    <Box className="product-card">
+      <Box className="image-container">
         <SwipeableViews index={activeIndex} onChangeIndex={handleSwipeChange}>
           {images.map((imageUrl, index) => (
-            <Box key={index} sx={{ display: 'flex', justifyContent: 'center', height: 300 }}>
-              <img src={imageUrl} alt={`Image ${index + 1}`} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+            <Box key={index} className="image">
+              <img src={imageUrl} alt={`Image ${index + 1}`} />
             </Box>
           ))}
         </SwipeableViews>
-        <IconButton sx={{ position: 'absolute', top: '50%', left: '10px', transform: 'translateY(-50%)' }} aria-label="previous" onClick={handleBack}>
+        <div className='nav-button'>
+        <IconButton className=" prev" onClick={handleBack}>
           <KeyboardArrowLeft />
         </IconButton>
-        <IconButton sx={{ position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)' }} aria-label="next" onClick={handleNext}>
+        <IconButton className="  next" onClick={handleNext}>
           <KeyboardArrowRight />
         </IconButton>
+        </div>
+      
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography variant="h5" component="div">
           Furniture Name
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Description of the furniture goes here. You can provide additional details about the product.
         </Typography>
-        <Box sx={{ display: 'flex', gap:'20px', alignItems: 'center', mt: 2 }}>
+        <Box className="price-section">
           <Typography variant="h6" component="div">
             $100 {/* Actual price */}
           </Typography>
-          <Typography variant="body1" component="div" sx={{ color: 'text.secondary', textDecoration: 'line-through' }}>
+          <Typography variant="body1" component="div" className="original-price">
             $120 {/* Original price */}
           </Typography>
         </Box>
       </CardContent>
-      <CardActions sx={{  }}>
-        <Button size="small" variant="contained" color="primary">
-          Add to Cart
-        </Button>
-        <Button size="small" variant="outlined" color="primary">
-          Wishlist
-        </Button>
-      </CardActions>
+      <Box className="actions">
+        <button className="action-button add-to-cart">Add to Cart</button>
+        <button className="action-button wishlist">Wishlist</button>
+      </Box>
     </Box>
   );
 }
