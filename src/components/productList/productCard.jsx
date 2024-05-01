@@ -5,7 +5,9 @@ import SwipeableViews from 'react-swipeable-views';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
 import { useNavigate  } from 'react-router-dom';
 
-function ProductCard() {
+function ProductCard(props) {
+const {type} = props
+
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const images = [
@@ -36,11 +38,11 @@ function ProductCard() {
 
   return (
     <Box className="product-card">
-      <Box className="image-container" onClick={handleCardClick} >
+      <Box className="image-container"  >
         <SwipeableViews index={activeIndex} onChangeIndex={handleSwipeChange}>
           {images.map((imageUrl, index) => (
             <Box key={index} className="image">
-              <img src={imageUrl} alt={`Image ${index + 1}`} />
+              <img src={imageUrl} alt={`Image ${index + 1}`} onClick={handleCardClick}/>
             </Box>
           ))}
         </SwipeableViews>
@@ -68,7 +70,7 @@ function ProductCard() {
       </CardContent>
       <Box className="actions">
         <button className="action-button add-to-cart">Add to Cart</button>
-        <button className="action-button wishlist">Wishlist</button>
+       {type!=='wishlist' && <button className="action-button wishlist">Wishlist</button>}
       </Box>
     </Box>
   );

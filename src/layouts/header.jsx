@@ -99,7 +99,7 @@ const Header = () => {
 
 <div className="grp-bar">
 <NotificationsIcon className='headicons'  />
-<FavoriteBorderIcon className='headicons'  />
+<FavoriteBorderIcon className='headicons' onClick={()=>navigate('/wishlist')} />
 <ShoppingBasketIcon className='headicons'  />
 </div>
 
@@ -148,7 +148,7 @@ const Header = () => {
 </div>
 <div className="mob-grp-bar">
 <NotificationsIcon className='headicons' />
-<FavoriteBorderIcon className='headicons' />
+<FavoriteBorderIcon className='headicons' onClick={()=>navigate('/wishlist')} />
 <ShoppingBasketIcon className='headicons' />
 
 <div>

@@ -6,7 +6,8 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 
-function ProductList() {
+function ProductList(props) {
+const {title,type} = props
 
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
@@ -17,15 +18,15 @@ function ProductList() {
   return (
     <div className='ProductsBox'>
       <div className="Title">
-        <h1 style={{color:'#6e6e6e'}}>Featured Products</h1>
+        <h1 style={{color:'#6e6e6e'}}>{title}</h1>
       </div>
       <div className="ProductList"> {/* Updated class name */}
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard type={type} />
+        <ProductCard type={type}/>
+        <ProductCard type={type}/>
+        <ProductCard type={type}/>
+        <ProductCard type={type}/>
+        <ProductCard type={type}/>
        
 
 <div className="pagination">

@@ -17,7 +17,7 @@ function Home() {
       <ContentSection/>
       <HomeCategory/>
       <OfferSale/>
-      <ProductList/>
+      <ProductList title={'Recent Furnitures'} />
       <ContactSec/>
       <Service/>
       <Footer/>
