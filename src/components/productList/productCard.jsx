@@ -3,6 +3,7 @@ import './index.css';
 import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
+import { green } from '@mui/material/colors';
 
 function ProductCard() {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -53,14 +54,10 @@ function ProductCard() {
         <Typography variant="body2" color="text.secondary">
           Description of the furniture goes here. You can provide additional details about the product.
         </Typography>
-        <Box className="price-section">
-          <Typography variant="h6" component="div">
-            $100 {/* Actual price */}
-          </Typography>
-          <Typography variant="body1" component="div" className="original-price">
-            $120 {/* Original price */}
-          </Typography>
-        </Box>
+      <div>
+        <p > <span style={{fontSize:'22px'}} >Rs 10000</span> <span style={{color:'gray',fontSize:'18px',textDecoration:'line-through'
+      ,marginLeft:'10px'}}>15000</span> <span style={{color:'green',marginLeft:'10px',fontSize:'22px'}}>25% off</span></p>
+      </div>
       </CardContent>
       <Box className="actions">
         <button className="action-button add-to-cart">Add to Cart</button>
