@@ -8,6 +8,7 @@ function WishlistPage() {
     <div>
       <Header/>
       <ProductList title={'Wish List'} type={'wishlist'} />
+      
       <Footer/>
     </div>
   )
