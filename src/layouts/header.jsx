@@ -18,7 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import { useNavigate  } from 'react-router-dom';
 
 
 
@@ -30,7 +30,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Header = () => {
   
     const [open, setOpen] = React.useState(false);
-  
+    const navigate = useNavigate();
+
     const toggleDrawer = (newOpen) => () => {
       setOpen(newOpen);
     };
@@ -109,7 +110,7 @@ const Header = () => {
       <nav>
         <ul className="header-nav">
           <li className="nav-item">
-            <a href="#home" className="nav-link">Home</a>
+            <a href="#home" className="nav-link" onClick={()=>navigate('/')}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#about" className="nav-link">About</a>

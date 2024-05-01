@@ -3,7 +3,7 @@ import './index.css';
 import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
-import { green } from '@mui/material/colors';
+import { useNavigate  } from 'react-router-dom';
 
 function ProductCard() {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -14,6 +14,8 @@ function ProductCard() {
     '/gallery/products/p1.jpg',
     // Add more image URLs as needed
   ];
+
+  const navigate = useNavigate();
 
   const handleSwipeChange = (index) => {
     setActiveIndex(index);
@@ -27,9 +29,14 @@ function ProductCard() {
     setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  const handleCardClick = () => {
+    // Navigate to /product route
+    navigate('/product');
+  };
+
   return (
     <Box className="product-card">
-      <Box className="image-container">
+      <Box className="image-container" onClick={handleCardClick} >
         <SwipeableViews index={activeIndex} onChangeIndex={handleSwipeChange}>
           {images.map((imageUrl, index) => (
             <Box key={index} className="image">
