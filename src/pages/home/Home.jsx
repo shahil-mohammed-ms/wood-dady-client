@@ -10,18 +10,21 @@ import ContactSec from '../../components/contactSec/contactSec'
 import HomeCategory from '../../components/homecategory/homeCategory'
 
 function Home() {
+const title = 'Our Customizable Furnitures'
+const para ='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut leo a justo faucibus vestibulum. Morbi tristique velit eget nulla viverra, nec condimentum libero venenatis. Aliquam erat volutpat. Sed sit amet sapien in libero tempus vulputate.'
+
+
   return (
     <div>
       <Header/>
       <Banner/>
-      <ContentSection/>
+      <ContentSection title={title} para={para} />
       <HomeCategory/>
       <OfferSale/>
       <ProductList title={'Recent Furnitures'} />
       <ContactSec/>
       <Service/>
       <Footer/>
-
 
       </div>
   )

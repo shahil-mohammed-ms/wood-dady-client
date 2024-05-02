@@ -116,10 +116,10 @@ const Header = () => {
             <a href="#about" className="nav-link" onClick={()=>navigate('/about')}>About</a>
           </li>
           <li className="nav-item">
-            <a href="#products" className="nav-link">Services</a>
+            <a href="#products" className="nav-link" onClick={()=>navigate('/service')}>Services</a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">Contact Us</a>
+            <a href="#contact" className="nav-link" onClick={()=>navigate('/contact')}>Contact Us</a>
           </li>
         </ul>
       </nav>

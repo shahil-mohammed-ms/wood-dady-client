@@ -4,10 +4,13 @@ import Home from '../pages/home/Home';
 import ProductPage from '../pages/product/Product';
 import WishlistPage from '../pages/wishlist/Wishlist';
 import AboutPage from '../pages/about/AboutPage';
+import ServicePage from '../pages/service/ServicePage';
+import ContactPage from '../pages/contact/ContactPage';
 
 function routes() {
   return (
    <>
+
      <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
@@ -19,6 +22,12 @@ function routes() {
   </Routes>
   <Routes>
     <Route path="/about" element={<AboutPage />} />
+  </Routes>
+  <Routes>
+    <Route path="/service" element={<ServicePage />} />
+  </Routes>
+  <Routes>
+    <Route path="/contact" element={<ContactPage />} />
   </Routes>
 
    </>
