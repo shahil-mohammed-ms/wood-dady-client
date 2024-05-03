@@ -32,6 +32,11 @@ const Header = () => {
     const [open, setOpen] = React.useState(false);
     const navigate = useNavigate();
 
+    const handleSearch = (event) => {
+      event.preventDefault(); // Prevent the default form submission behavior
+      navigate('/search'); // Navigate to the desired route
+    };
+
     const toggleDrawer = (newOpen) => () => {
       setOpen(newOpen);
     };
@@ -71,9 +76,12 @@ const Header = () => {
     <div className='header' >
 {/* header top section */}
       <div className='header-top'>
+
+
+        
 <div className="search-bar">
 
-<form   style={{ display: 'flex' }}>
+<form   style={{ display: 'flex' }} onSubmit={handleSearch}>
 
         <SearchIcon className='headicons' />
 

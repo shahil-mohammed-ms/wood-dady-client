@@ -6,6 +6,7 @@ import WishlistPage from '../pages/wishlist/Wishlist';
 import AboutPage from '../pages/about/AboutPage';
 import ServicePage from '../pages/service/ServicePage';
 import ContactPage from '../pages/contact/ContactPage';
+import SearchPage from '../pages/search/SearchPage';
 
 function routes() {
   return (
@@ -28,6 +29,9 @@ function routes() {
   </Routes>
   <Routes>
     <Route path="/contact" element={<ContactPage />} />
+  </Routes>
+  <Routes>
+    <Route path="/search" element={<SearchPage />} />
   </Routes>
 
    </>
