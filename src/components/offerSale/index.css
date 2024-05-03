@@ -4,6 +4,8 @@
   /* Additional CSS for positioning and text color */
   position: relative;
   color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 .OfferSale p,

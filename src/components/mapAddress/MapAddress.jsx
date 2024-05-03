@@ -17,7 +17,7 @@ function MapAddress() {
           title="Google Map"
         ></iframe>
       </Box>
-      <Paper elevation={3} className='addressContainer'>
+      {/* <Paper elevation={3} className='addressContainer'>
         <Typography variant="h5" gutterBottom>
           Our Address
         </Typography>
@@ -30,7 +30,7 @@ function MapAddress() {
         <Typography variant="body1">
           Email: example@example.com
         </Typography>
-      </Paper>
+      </Paper> */}
     </Box>
   );
 }
